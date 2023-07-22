@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Awesome Home Page</title>
+  <link rel="stylesheet" type="text/css" href="homestyle.css">
+  <style>
+   
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        height: 700%;
+        background-size: cover;
+        background-position: center;
+   
+        animation: animate 40s  ease-in-out infinite;
+  }
+  
+  @keyframes animate {
+    0%,90% { 
+        background-image: url(pic.jpg);
+  }
+  15%{ 
+    background-image: url(suz5.jpg);
+}
+30%{ 
+    background-image: url(pic.jpg);
+}
+  }
+    
+    /* Navigation bar styles */
+    nav {
+      background-color: purple;
+      height: 50px;
+      position: fixed;
+      width: 100%;
+    }
+    
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
+    
+    nav li {
+      margin: 0 10px;
+    }
+    
+    nav a {
+      text-decoration: none;
+      color: white;
+      padding: 5px;
+    }
+    
+    nav a:hover {
+      color: #ff0000;
+    }
+    
+    /* Centered content styles */
+    .centered-content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    
+    .centered-content p {
+      font-size: 60px;
+      cursor: pointer;
+      transition: transform 0.3s;
+      justify-content: center;
+      line-height: 60px;
+      color: white;
+    }
+    
+    .centered-content p:hover {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="Aboutus1.html">About Us</a></li>
+      <li><a href="location.html">Location</a></li>
+      <li><a href="contactNew.html">Contact Us</a></li>
+      <li><a href="Gallery.html">Gallery</a></li>
+      <li><a href="payment.html">Donation</a></li>
+      <li><a href="Newlogin.html">Login</a></li>
+      
+    </ul>
+  </nav>
+  
+  <div class="centered-content">
+    <p>WELCOME<br> TO NIK SPEED <br>INSTITUTE OF <br>TECHNOLOGIES <br> WEBSITE</p>
+  </div>
+</body>
+</html>

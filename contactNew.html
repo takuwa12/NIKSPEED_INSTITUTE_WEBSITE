@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contactNewStyle.css">
+</head>
+<style>
+    nav {
+      background-color: purple;
+      height: 50px;
+      position: fixed;
+      width: 100%;
+      margin-bottom: 90%;
+    }
+    
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
+    nav ul li{
+        font-display: inline-block;
+        line-height: 80px;
+        
+    }
+
+    
+    nav li {
+      margin: 0 10px;
+    }
+    
+    nav a {
+      text-decoration: none;
+      color: white;
+      padding: 5px;
+    }
+    
+    nav a:hover {
+      color: #ff0000;
+    }
+</style>
+<body>
+    <nav>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="Aboutus1.html">About Us</a></li>
+          <li><a href="location.html">Location</a></li>
+          <li><a href="contactNew.html">Contact Us</a></li>
+          <li><a href="Gallery.html">Gallery</a></li>
+          <li><a href="payment.html">Donation</a></li>
+          <li><a href="Newlogin.html">Login</a></li>
+          
+        </ul>
+      </nav>
+    <div class="container">
+        <h1>Contact Us</h1>
+        <form action="https://formspree.io/f/xeqbokln" method="POST">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

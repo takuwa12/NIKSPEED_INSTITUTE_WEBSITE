@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Registration Form</title>
+  <link rel="stylesheet" type="text/css" href="styleregister.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Registration Form</h1>
+    <form action="reg.php" method="POST">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" placeholder="Enter a username" required="required">
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" placeholder="Enter a password" required="required">
+
+      <label for="firstname">First Name:</label>
+      <input type="text" id="firstname" name="firstname" placeholder="Enter your first name" required="required">
+
+      <label for="lastname">Last Name:</label>
+      <input type="text" id="lastname" name="lastname" placeholder="Enter your last name" required="required">
+
+      <label for="contact">Contact:</label>
+      <input type="text" id="contact" name="contact" placeholder="Enter your contact number" required="required">
+
+      <button type="submit">Register</button>
+    </form>
+  </div>
+</body>
+</html>

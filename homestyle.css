@@ -1,0 +1,18 @@
+body {
+    margin: 0;
+    padding: 0;
+   height: 700%;
+    background-size: cover;
+    background-position: center;
+   
+    animation: animate 20s  ease-in-out infinite;
+  }
+  
+  @keyframes animate {
+    0%,100% { 
+        background-image: url(pic.jpg);
+  }
+  15%{ 
+    background-image: url(pic3.jpg);
+}
+  }

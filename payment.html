@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mobile Money Payment</title>
+  <link rel="stylesheet" type="text/css" href="stylepay.css">
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        height: 700%;
+        
+  }
+     
+    /* Navigation bar styles */
+    nav {
+      background-color: purple;
+      height: 50px;
+      position: fixed;
+      width: 100%;
+    }
+    
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
+    
+    nav li {
+      margin: 0 10px;
+    }
+    
+    nav a {
+      text-decoration: none;
+      color: white;
+      padding: 5px;
+    }
+    
+    nav a:hover {
+      color: #ff0000;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="Aboutus1.html">About Us</a></li>
+      <li><a href="location.html">Location</a></li>
+      <li><a href="contactNew.html">Contact Us</a></li>
+      <li><a href="Gallery.html">Gallery</a></li>
+      <li><a href="payment.html">Donation</a></li>
+      <li><a href="Newlogin.html">Login</a></li>
+      
+    </ul>
+  </nav>
+  <div class="container">
+    <h1>Mobile Money Payment</h1>
+    <form action="payment.php" method="post">
+      <label for="phone">Phone Number:</label>
+      <input type="text" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+      <label for="amount"> Donation Amount:</label>
+      <input type="text" id="amount" name="amount" placeholder="Enter payment amount" required>
+
+      <button type="submit">Make Payment</button>
+    </form>
+  </div>
+</body>
+</html>
